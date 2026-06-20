@@ -170,7 +170,7 @@ Pregunta: {pregunta}
 Responde en español, de forma clara.
 """
     respuesta = gemini_client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-1.5-flash",
         contents=prompt,
     )
     return respuesta.text
